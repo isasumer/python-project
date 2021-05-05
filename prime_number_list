@@ -1,0 +1,12 @@
+def asal_listesi():
+  n=int (input ("Asal sayı listesi kaça kadar olsun:"))
+  asal_sayı = [] 
+  for i in range(2, n+1):     # 2 den 100 e iterate ediyoruz
+      asal=True               #aşağıdaki döngü sonucunda asal=False olmazsa sayı asal demektir.
+      for j in range(2, i):   #her zaman i j den büyük olmalı. range (2,i) i sayısını kapsamaz.
+        if i % j == 0:        #kalan 0 ise tam bölünmüş demektir. asal değil. kendisine bölünme yok.
+            asal = False      #asal=False ise içerdeki for döngğsğnğ bitir yukarı çık.
+      if asal:              
+        asal_sayı.append(i)
+  print (asal_sayı)
+asal_listesi()
