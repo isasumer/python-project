@@ -1,0 +1,4 @@
+def fizzbuzz(n):
+    result=lambda i: "Fizz"*(not i%3)+"Buzz"*(not i%5) or i
+    print(*map(result,range(1,n)), sep="\n")
+fizzbuzz(100)
