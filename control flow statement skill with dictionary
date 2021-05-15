@@ -1,0 +1,2 @@
+word=input("Take a sentence")
+print (dict(zip([x for x in word], [word.count(x) for x in word])))
